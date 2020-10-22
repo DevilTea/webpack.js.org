@@ -243,6 +243,7 @@ __webpack.config.js__
     devtool: 'inline-source-map',
 +   devServer: {
 +     contentBase: './dist',
++     open: true,
 +   },
     plugins: [
       new CleanWebpackPlugin({ cleanStaleWebpackAssets: false }),
@@ -274,7 +275,7 @@ __package.json__
     "scripts": {
       "test": "echo \"Error: no test specified\" && exit 1",
       "watch": "webpack --watch",
-+     "start": "webpack-dev-server --open",
++     "start": "webpack serve",
       "build": "webpack"
     },
     "keywords": [],
